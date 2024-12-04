@@ -60,6 +60,5 @@ end
 
 input = parse_input("input.txt")
 
-part_1(input)
-
-part_2(input)
+println(part_1(input))
+println(part_2(input))

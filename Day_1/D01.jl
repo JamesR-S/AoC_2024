@@ -35,5 +35,5 @@ end
 
 col_1,col_2 = parse_input("input.txt")
 
-part1(col_1,col_2)
-part2(col_1,col_2)
+println(part1(col_1,col_2))
+println(part2(col_1,col_2))
