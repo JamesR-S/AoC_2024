@@ -7,14 +7,6 @@ function parse_input(path::String)
     return permutedims(input)
 end
 
-
-
-input = parse_input("input.txt")
-
-input[CartesianIndex(1,2)]
-
-checkbounds(Bool,input,CartesianIndex(140,140))
-
 function safe_lookup(coords::CartesianIndex, input::Matrix{Char})
     if checkbounds(Bool,input,coords)
         return input[coords]
@@ -64,6 +56,8 @@ function part_2(input::Matrix{Char})
     end
     return total_words
 end
+
+input = parse_input("input.txt")
 
 println(part_1(input))
 println(part_2(input))
